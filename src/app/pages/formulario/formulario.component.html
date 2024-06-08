@@ -1,0 +1,19 @@
+<h3>Formulario</h3>
+
+<div [formGroup]="form">
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" autocomplete="off" formControlName="nombre">
+    </div>
+    <div>
+        <label for="">Raza</label>
+        <select formControlName="raza">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Ave">Ave</option>
+            <option value="Pez">Pez</option>
+        </select>
+    </div>
+
+    <button (click)="addMascota()">Guardar</button>
+</div>

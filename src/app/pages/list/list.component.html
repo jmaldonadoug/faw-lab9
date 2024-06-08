@@ -1,0 +1,18 @@
+<h3>Datos</h3>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Raza</th>
+        <th>Eliminar</th>
+    </tr>
+    @for (item of currentData; track item.id) {
+    <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.raza }}</td>
+        <td><button (click)="removeMascota(item.id)">Eliminar</button></td>
+    </tr>
+    }
+</table>
